@@ -118,6 +118,8 @@ struct List_1_t84B666107A8A3ECB0F5A24B0243137D056DA9165;
 struct ObservationList_1_t4962412C8BEC9F1E4DCF56D833B16AE829AC09EF;
 // UnityEngine.Vector3[][]
 struct Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D;
+// System.Boolean[]
+struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
 // System.Byte[]
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 // UnityEngine.Camera[]
@@ -6545,8 +6547,40 @@ struct Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99  : public MonoBehavio
 	VirtualButtonBehaviour_tCE0715599AD5D666FCA4A62B0F6FC27267C99491* ___btnAzul_4;
 	// Vuforia.VirtualButtonBehaviour Principal::btnRojo
 	VirtualButtonBehaviour_tCE0715599AD5D666FCA4A62B0F6FC27267C99491* ___btnRojo_5;
-	// UnityEngine.UI.Text Principal::mensaje
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___mensaje_6;
+	// System.Boolean Principal::btnAzulPres
+	bool ___btnAzulPres_6;
+	// System.Boolean Principal::btnRojoPres
+	bool ___btnRojoPres_7;
+	// UnityEngine.GameObject Principal::modelo1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo1_8;
+	// UnityEngine.GameObject Principal::modelo2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo2_9;
+	// UnityEngine.GameObject Principal::modelo3
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo3_10;
+	// UnityEngine.GameObject Principal::modelo4
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo4_11;
+	// UnityEngine.GameObject Principal::modelo5
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo5_12;
+	// UnityEngine.GameObject Principal::modelo6
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo6_13;
+	// UnityEngine.GameObject Principal::modelo7
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo7_14;
+	// UnityEngine.GameObject Principal::modelo8
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo8_15;
+	// UnityEngine.GameObject Principal::modelo9
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo9_16;
+	// UnityEngine.GameObject Principal::modelo10
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modelo10_17;
+	// System.Int32 Principal::puntacion
+	int32_t ___puntacion_18;
+	// System.Boolean[] Principal::conteo
+	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___conteo_19;
+	// UnityEngine.UI.Text Principal::puntajeTXT
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___puntajeTXT_20;
+	// UnityEngine.UI.Text Principal::acierto
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___acierto_21;
+	// UnityEngine.GameObject Principal::btnReinicio
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___btnReinicio_22;
 };
 
 // TMPro.Examples.ShaderPropAnimator
@@ -6813,12 +6847,20 @@ struct Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F  : public MonoBehaviour_
 {
 	// System.Single Tiempo::tiempoInicio
 	float ___tiempoInicio_4;
-	// UnityEngine.UI.Text Tiempo::textoTiempo
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___textoTiempo_5;
-	// UnityEngine.UI.Text Tiempo::textoBoton
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___textoBoton_6;
 	// System.Boolean Tiempo::activoTiempo
-	bool ___activoTiempo_7;
+	bool ___activoTiempo_5;
+	// UnityEngine.UI.Text Tiempo::textoTiempo
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___textoTiempo_6;
+	// UnityEngine.UI.Text Tiempo::textoBoton
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___textoBoton_7;
+	// UnityEngine.GameObject Tiempo::btnReinicio
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___btnReinicio_8;
+	// UnityEngine.GameObject Tiempo::puntaje
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___puntaje_9;
+	// System.String Tiempo::puntos
+	String_t* ___puntos_10;
+	// UnityEngine.UI.Text Tiempo::mensaje
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___mensaje_11;
 };
 
 // TMPro.Examples.VertexColorCycler
@@ -7550,12 +7592,12 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6303[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6304[2] = 
 {
 	static_cast<int32_t>(offsetof(Permission_t915D93FAF4E75226FA1C92144D9291C232C15803_StaticFields, ___m_UnityPermissions_0)),static_cast<int32_t>(offsetof(Permission_t915D93FAF4E75226FA1C92144D9291C232C15803_StaticFields, ___m_Activity_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6306[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6306[19] = 
 {
-	static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___btnAzul_4)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___btnRojo_5)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___mensaje_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6307[4] = 
+	static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___btnAzul_4)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___btnRojo_5)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___btnAzulPres_6)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___btnRojoPres_7)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo1_8)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo2_9)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo3_10)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo4_11)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo5_12)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo6_13)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo7_14)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo8_15)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo9_16)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___modelo10_17)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___puntacion_18)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___conteo_19)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___puntajeTXT_20)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___acierto_21)),static_cast<int32_t>(offsetof(Principal_tE9B37DFDC53F3642258F4421FF343D0C7467ED99, ___btnReinicio_22)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6307[8] = 
 {
-	static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___tiempoInicio_4)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___textoTiempo_5)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___textoBoton_6)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___activoTiempo_7)),};
+	static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___tiempoInicio_4)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___activoTiempo_5)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___textoTiempo_6)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___textoBoton_7)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___btnReinicio_8)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___puntaje_9)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___puntos_10)),static_cast<int32_t>(offsetof(Tiempo_t50106E826012B6A227BEB1D48794BAF25B88291F, ___mensaje_11)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6308[3] = 
 {
 	static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatInputField_4)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatDisplayOutput_5)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatScrollbar_6)),};

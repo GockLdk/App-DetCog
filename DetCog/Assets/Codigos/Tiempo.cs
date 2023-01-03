@@ -5,16 +5,23 @@ using UnityEngine.UI;
 public class Tiempo : MonoBehaviour
 {
     public float tiempoInicio;
+    public bool activoTiempo;
     public Text textoTiempo;
     public Text textoBoton;
+    public GameObject btnReinicio;
 
-    bool activoTiempo = false;
+    public GameObject puntaje;
+    public string puntos;
+
+    public Text mensaje;   
 
     // Start is called before the first frame update
     // Start is called before the first frame update
     void Start()
     {
+        activoTiempo = false;
         textoTiempo.text = tiempoInicio.ToString("F2");
+        btnReinicio.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,11 +32,26 @@ public class Tiempo : MonoBehaviour
             tiempoInicio += Time.deltaTime;
             textoTiempo.text = tiempoInicio.ToString("F2");
         }
+
+        
+        if (btnReinicio.activeSelf)
+        {
+            activoTiempo = false;
+            mensaje.text = "Juego\nTerminado";
+        }
     }
 
-    public void botonTiempo()
+    public void botonInicio()
     {
-        activoTiempo = !activoTiempo;
-        textoBoton.text = activoTiempo ? "Pausar" : "Iniciar";
+        activoTiempo = true;
+        /*activoTiempo = !activoTiempo;
+        textoBoton.text = activoTiempo ? "Pausar" : "Iniciar";*/
+    }
+
+    public void botonReinicio()
+    {
+        tiempoInicio = 0.0f;
+        activoTiempo = true;
+        mensaje.text = "";
     }
 }
