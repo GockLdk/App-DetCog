@@ -34,9 +34,6 @@ La Asociación Española contra el Cáncer (AECC) también señala que **la real
 **Además, el 88% de las personas han manifestado tener la sensación de que el tiempo de tratamiento ha pasado más rápido. También que les ha ayudado a sobrellevar la quimioterapia.**
 
 ## Funcionamiento
-<video width="320" height="240" controls>
-  <source src="/Documentacion/Varios/VideoDemoAppDetCog.mp4" type="video/mp4">
-</video>
 ![Captura1](./Documentacion/Varios/Captura1.png)
 ![Captura2](./Documentacion/Varios/Captura2.png)
 ![Captura3](./Documentacion/Varios/Captura3.png)
