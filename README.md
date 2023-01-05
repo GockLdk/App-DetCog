@@ -4,7 +4,7 @@
 ![Icono](./DetCog/Assets/icono.png)
 
 ## Documentación
-- [Instalación y Ejecución](./Documentacion/ManualUsuario_DetCog.pdf) 
+- [Manual de Usuario](./Documentacion/ManualUsuario_DetCog.pdf) 
 - [Manual Técnico](./Documentacion/ManualTecnico_DetCog.pdf)
 
 ### Alcance Global
